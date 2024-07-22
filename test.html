@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>BY Book Store</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">BY Book Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="all.html">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="pop.html">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="new.html">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+
+                <form class="d-flex">
+                    <button id="cart-button" class="btn btn-outline-dark" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span id="cart-count" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">BY BOOK</h1>
+                <p class="lead fw-normal text-white-50 mb-0">"Read More, Learn More, Live More"</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Product 1 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Hot!!</div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#book1Modal">
+                            <img class="card-img-top" src="buku1.png" alt="..." />
+                        </a>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Me, Myself, and I "A Journey To Self Love"</h5>
+                                <h6 class="fw-bolder">Jonathan Patterson</h6>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                IDR 375,000
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-title="Me, Myself, and I 'A Journey To Self Love'" data-price="375000">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Product 1 -->
+                <div class="modal fade" id="book1Modal" tabindex="-1" aria-labelledby="book1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="book1ModalLabel">Me, Myself, and I "A Journey To Self Love"</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lara, a young woman grappling with her identity and place in the world, embarks on a journey of self-discovery. Amidst her quest, she encounters Rian, an inspiring artist who guides her towards self-expression and embracing her imperfections. Together, Lara finds true love and happiness, reaffirming that the journey to self-discovery and love is a challenging yet rewarding one.</p>
+                                <p>Author: Jonathan Patterson</p>
+                                <p>Price: IDR 375,000</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary add-to-cart" data-title="Me, Myself, and I 'A Journey To Self Love'" data-price="375000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Hot!!</div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#book2Modal">
+                            <img class="card-img-top" src="buku2.png" alt="..." />
+                        </a>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Where Are You?</h5>
+                                <h6 class="fw-bolder">Sumari Hadid</h6>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                IDR 300,000
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-title="Where Are You" data-price="300000">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Product 2 -->
+                <div class="modal fade" id="book2Modal" tabindex="-1" aria-labelledby="book2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="book2ModalLabel">Where Are You?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Sarah, a talented journalist, goes missing while investigating a high-profile case. Desperate to find her, her childhood friend Ethan, now a private investigator, delves into a web of conspiracy and danger. With the clock ticking, Ethan races against time to uncover the truth and bring Sarah back, battling dark secrets and unexpected twists along the way.</p>
+                                <p>Author: Sumari Hadid</p>
+                                <p>Price: IDR 300,000</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary add-to-cart" data-title="Where Are You" data-price="300000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Hot!!</div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#book3Modal">
+                            <img class="card-img-top" src="buku3.png" alt="..." />
+                        </a>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">The Book of Wings</h5>
+                                <h6 class="fw-bolder">J.T Lawrence</h6>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                IDR 450,000
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto add-to-cart" href="#" data-title="The Book of Wings" data-price="450000">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Product 3 -->
+                <div class="modal fade" id="book3Modal" tabindex="-1" aria-labelledby="book3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="book3ModalLabel">The Book of Wings</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>In a world where magical wings grant extraordinary powers, a young orphan named Kael discovers a hidden pair of wings with the potential to change the fate of his oppressed people. Joined by a band of rebels, Kael embarks on a quest to unlock the wings' true power and liberate his land from tyranny.</p>
+                                <p>Author: J.T Lawrence</p>
+                                <p>Price: IDR 450,000</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary add-to-cart" data-title="The Book of Wings" data-price="450000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <h5>Total: IDR <span id="cart-total">0</span></h5>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="checkout-button">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; BY Book Store 2024</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Add to Cart JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+            const cartItemsContainer = document.getElementById("cart-items");
+            const cartCountElement = document.getElementById("cart-count");
+            const cartTotalElement = document.getElementById("cart-total");
+
+            let cart = [];
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const title = this.getAttribute("data-title");
+                    const price = parseInt(this.getAttribute("data-price"));
+
+                    const existingItem = cart.find(item => item.title === title);
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                        existingItem.total = existingItem.quantity * existingItem.price;
+                    } else {
+                        cart.push({
+                            title: title,
+                            price: price,
+                            quantity: 1,
+                            total: price
+                        });
+                    }
+
+                    updateCart();
+                });
+            });
+
+            function updateCart() {
+                cartItemsContainer.innerHTML = "";
+                let cartTotal = 0;
+
+                cart.forEach(item => {
+                    const cartItemRow = document.createElement("tr");
+
+                    const titleCell = document.createElement("td");
+                    titleCell.textContent = item.title;
+                    cartItemRow.appendChild(titleCell);
+
+                    const quantityCell = document.createElement("td");
+                    quantityCell.textContent = item.quantity;
+                    cartItemRow.appendChild(quantityCell);
+
+                    const priceCell = document.createElement("td");
+                    priceCell.textContent = `IDR ${item.price.toLocaleString()}`;
+                    cartItemRow.appendChild(priceCell);
+
+                    const totalCell = document.createElement("td");
+                    totalCell.textContent = `IDR ${item.total.toLocaleString()}`;
+                    cartItemRow.appendChild(totalCell);
+
+                    cartItemsContainer.appendChild(cartItemRow);
+
+                    cartTotal += item.total;
+                });
+
+                cartCountElement.textContent = cart.length;
+                cartTotalElement.textContent = cartTotal.toLocaleString();
+            }
+        });
+    </script>
+</body>
+
+</html>
